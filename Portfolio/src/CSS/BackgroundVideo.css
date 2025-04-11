@@ -1,0 +1,26 @@
+#background-video {
+    
+    z-index: -2; /* Behind everything */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; 
+      filter: grayscale(50%) brightness(0.9) opacity(0.8);
+    }
+  
+  .content {
+      position: relative; 
+      color: white;  
+  }
+  
+  .blur-overlay,
+  .grain-overlay {
+    z-index: -1; /* Just above the video */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+  }

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Major+Mono+Display&family=Teko:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap');
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    height: 100%;
+}
+.hero{
+z-index: 1; /* Above background, behind menu */
+}
+.hero-content {
+    position: relative; /* Ensures relative positioning for children */
+}
+
+.hero-content h1 {
+    display: flex; /* Ensure it's inline for the cursor to appear next to the text */
+    position: relative; /* Set relative position for cursor positioning */
+}
+
+.Typewriter__wrapper {
+    font-size: 2rem; /* Adjust size for better visibility */
+    font-family: "Ysabeau SC", sans-serif;
+  font-optical-sizing: auto;    
+  font-style: normal;
+    letter-spacing: 2px; /* Slight spacing between letters */
+    line-height: 1.2; /* Adjust line height for a cleaner look */
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Soft text shadow for better contrast */
+    transition: all 0.3s ease-in-out; /* Smooth transition for text changes */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+}
+ 
+
+.hero-content p {
+    font-family: "Ysabeau SC", sans-serif;
+  font-optical-sizing: auto;    
+  font-style: normal;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.hero-content .btn {
+    font-family: "Ysabeau SC", sans-serif;
+  font-optical-sizing: auto;    
+  font-style: normal;
+    padding: 10px 20px;
+    background-color: #639cb8a0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 85px; 
+}
+
+.hero-content .btn:hover {
+    background-color: #0e4edbb6;
+}
+/* 
+Cursor Blink Effect
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+} */
