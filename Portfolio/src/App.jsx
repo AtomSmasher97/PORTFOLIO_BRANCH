@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import Navbar from './Navbar'
 import 'flowbite'; 
 import BackgroundVideo from './BackgroundVideo';
+import PatternLinks from './PatternLinks';
+import Hero from './Hero';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,9 +13,13 @@ function App() {
   return (
     <>
     <Navbar/>
-    <BackgroundVideo/>
+    <div className='main-container'>
 
-       
+    <BackgroundVideo/>
+    <PatternLinks/>
+       <Hero/>
+    </div>
+
     </>
   )
 }

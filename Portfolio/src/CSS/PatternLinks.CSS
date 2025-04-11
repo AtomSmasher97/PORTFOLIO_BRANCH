@@ -1,5 +1,5 @@
  
-.gallery {
+  .gallery {
     position: relative;
       --s: 150px; /* control the size */
       --g: 8px; /* control the gap */
