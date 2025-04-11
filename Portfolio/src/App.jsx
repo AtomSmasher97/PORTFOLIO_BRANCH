@@ -13,12 +13,15 @@ function App() {
   return (
     <>
     <Navbar/>
-    <div className='main-container'>
-
+    <div >
     <BackgroundVideo/>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <Hero/>
     <PatternLinks/>
-       <Hero/>
-    </div>
+  </div>
+  <div>
+  </div>
+</div>
 
     </>
   )

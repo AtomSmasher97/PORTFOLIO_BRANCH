@@ -1,5 +1,4 @@
-import React from 'react';
-import './CSS/Navbar.css'; // Make sure this path exists
+import React from 'react'; 
 
 const Navbar = () => {
   return (
