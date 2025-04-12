@@ -15,12 +15,23 @@
       color: white;  
   }
   
-  .blur-overlay,
-  .grain-overlay {
-    z-index: -1; /* Just above the video */
+  .blur-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh; 
-  }
+    height: 100vh;
+    backdrop-filter: blur(10px);  
+    z-index: -1;
+}
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    opacity: 0.15; /* subtle grain */
+    z-index: -1;
+}

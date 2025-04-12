@@ -6,6 +6,7 @@ import 'flowbite';
 import BackgroundVideo from './BackgroundVideo';
 import PatternLinks from './PatternLinks';
 import Hero from './Hero';
+import ProjectsSection from './ProjectSection'; 
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,14 +16,12 @@ function App() {
     <Navbar/>
     <div >
     <BackgroundVideo/>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <Hero/>
-    <PatternLinks/>
-  </div>
   <div>
+    <Hero/>
   </div>
 </div>
-
+<PatternLinks/>
+{/* <ProjectsSection/>  */}
     </>
   )
 }

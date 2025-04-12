@@ -8,20 +8,22 @@ const Hero = () => {
             <div className="hero-content">
                 <Typewriter
                     onInit={(typewriter) => {
-                        typewriter.typeString(' HELLO, I\'m VENKY' )
+                        typewriter.typeString(' HELLO, I\'m VENKY')
                             .pauseFor(2500)
                             .deleteAll()
-                            .typeString('Welcome to my Portfolio website' )
+                            .typeString('Welcome to my Portfolio website')
                             .pauseFor(1500)
                             .deleteAll()
-                            .typeString('CheckOut myWork here👉' )
+                            .typeString('Checkout my work here  <br/> 👇 ') // Removed the emoji here for now, will add an icon
                             .start();
                     }}
                 />
-                <p>                                </p>
-                <a href="#projects" className="btn">
-                    Checkout my work here →
-                </a>
+                <p></p>
+                {/* <div className="work-link-container">   
+                  <a href="#projects" className="work-link">
+                      Checkout my work here 👉
+                  </a>
+                 </div> */}
             </div>
         </section>
     );
