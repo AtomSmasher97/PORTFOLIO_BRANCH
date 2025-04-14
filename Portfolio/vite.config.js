@@ -8,5 +8,5 @@ const repositoryName = 'PORTFOLIO_BRANCH';
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: `/PORTFOLIO_BRANCH/`, // Set the base path to /PORTFOLIO_BRANCH/
-  plugins: [react()],
+  
 });
