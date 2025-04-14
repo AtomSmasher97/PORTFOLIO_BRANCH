@@ -14,11 +14,10 @@ const Hero = () => {
                             .typeString('Welcome to my Portfolio website')
                             .pauseFor(1500)
                             .deleteAll()
-                            .typeString('Checkout my work here  <br/> 👇 ') // Removed the emoji here for now, will add an icon
+                            .typeString('Checkout my work here  <br/> 👇 ')  
                             .start();
                     }}
-                />
-                <p></p>
+                /> 
                 {/* <div className="work-link-container">   
                   <a href="#projects" className="work-link">
                       Checkout my work here 👉

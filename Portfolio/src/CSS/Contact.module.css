@@ -1,0 +1,169 @@
+/* Contact.module.css */
+
+.contactSection {
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ensure it takes up significant space */
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff; /* White card background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .heading {
+    font-size: 2.5rem; /* Responsive font size */
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #343a40; /* Dark grey heading */
+  }
+  
+  .subheading {
+    font-size: 1.1rem;
+    color: #6c757d; /* Medium grey text */
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between form elements */
+    text-align: left; /* Align labels and inputs left */
+  }
+  
+  .formGroup {
+    width: 100%;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #495057; /* Slightly darker grey for labels */
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da; /* Subtle border */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .input::placeholder,
+  .textarea::placeholder {
+    color: #adb5bd; /* Lighter placeholder text */
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: #80bdff; /* Highlight color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+  }
+  
+  .textarea {
+    resize: vertical; /* Allow vertical resize, but not horizontal */
+    min-height: 120px;
+  }
+  
+  .submitButton {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff; /* Primary blue button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    align-self: center; /* Center button */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  .submitButton:hover:not(:disabled) {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+  }
+  
+  .submitButton:active:not(:disabled) {
+      transform: translateY(0px); /* Click effect */
+  }
+  
+  .submitButton:disabled {
+    background-color: #6c757d; /* Grey out when disabled/submitting */
+    cursor: not-allowed;
+  }
+  
+  /* Status Messages */
+  .statusMessage {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb;
+  }
+  
+  .error {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border: 1px solid #f5c6cb;
+  }
+  
+  /* Alternative Contact */
+  .alternativeContact {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e9ecef; /* Subtle separator line */
+      color: #6c757d;
+      font-size: 0.9rem;
+  }
+  
+  .alternativeContact p {
+      margin-bottom: 15px;
+  }
+  
+  .altLink {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.2s ease;
+  }
+  
+  .altLink:hover {
+      color: #0056b3;
+      text-decoration: underline;
+  }
+  
+  /* --- Responsive Adjustments --- */
+  @media (max-width: 768px) {
+      .heading {
+          font-size: 2rem;
+      }
+      .subheading {
+          font-size: 1rem;
+      }
+      .container {
+          padding: 30px 20px;
+      }
+  }

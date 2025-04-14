@@ -7,5 +7,6 @@ const repositoryName = 'PORTFOLIO_BRANCH';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: `/${repositoryName}/`, // Set the base path to /PORTFOLIO_BRANCH/
+  base: `/PORTFOLIO_BRANCH/`, // Set the base path to /PORTFOLIO_BRANCH/
+  plugins: [react()],
 });

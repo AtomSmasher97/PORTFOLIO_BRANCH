@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Major+Mono+Display&family=Russo+One&family=Teko:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap');
+.navbar-container { 
+    z-index: 9999;
+  height: 10vh;
+  /* background: #111; */
+  overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 3vh;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+  position: relative;
+  text-decoration: none;
+  cursor: none;
+  transition: transform 0.2s ease;
+}
+
+.nav-link span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover span {
+  transform: translateY(-4px);
+}
+
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.cursor--active {
+  transform: translate(-50%, -50%) scale(5);
+}
+ 

@@ -2,18 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 .pattern-links-section {
-  padding-top: 100px; /* Add space above the pattern links section */
-  /* Add any other styling for the section as needed */
+  overflow-x: hidden; 
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;  
   background-color: #1d2628;
 }
 
 .gallery {
+  overflow: hidden;
+  z-index: 1;
 position: relative;
 --s: 220px;
 --g: 1px;
 display: grid;
 grid: auto-flow var(--s) / repeat(2, var(--s));
 gap: var(--g);
+justify-content: center;
+max-width: 500px;         
+margin: 0 auto;
 }
 
 .gallery > img {
@@ -25,7 +32,7 @@ transition: 0.15s, z-index 0s 0.15s;
 }
 
 .gallery > img:hover {
-z-index: 999;
+z-index: 2;
 scale: 1.3;
 width: calc(200% + var(--g));
 filter: grayscale(0);
@@ -56,9 +63,8 @@ place-self: end;
 body {
 margin: 0;
 min-height: 100vh;
-display: flex; /* Changed from grid to flex */
-flex-direction: column; /* Stack items vertically */
-/* place-content: center;  Removed place-content */
+display: flex;  
+flex-direction: column;  
 background: #1d2628;
 align-items: center;
 /* transform: scale(0.9);
@@ -67,5 +73,5 @@ width: 100%; */
 
 .pattern-container {
 position: relative;
-z-index: 2;
+/* z-index: 2; */
 }
