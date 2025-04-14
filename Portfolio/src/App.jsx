@@ -11,8 +11,8 @@ import { useEffect, useState } from 'react';
 function Home() {
   return (
     <div className="home-container">
-      <BackgroundVideo />
       <Hero />
+      <BackgroundVideo />
       <PatternLinks />
     </div>
   );
