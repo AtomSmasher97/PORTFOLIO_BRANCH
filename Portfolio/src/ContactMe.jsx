@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import styles from './CSS/Contact.module.css'; // We'll use the same CSS Module file
-// import'./CSS/ContactMe.css'; 
+import styles from './CSS/Contact.module.css'; 
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -8,7 +7,6 @@ function Contact() {
     email: '',
     message: '',
   });
-  // Simplified status for static demo: just track if submitted
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
@@ -17,29 +15,25 @@ function Contact() {
       ...prevData,
       [name]: value,
     }));
-    // Reset submitted message if user types again
     if (isSubmitted) {
         setIsSubmitted(false);
     }
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default browser form submission
+    e.preventDefault(); 
 
-    // --- Static Simulation ---
     console.log('Form data captured (not sent):', formData);
-    setIsSubmitted(true); // Set submitted state to true
-    setFormData({ // Clear the form fields
+    setIsSubmitted(true); 
+    setFormData({ 
       name: '',
       email: '',
       message: '',
     });
 
-    // Optional: Hide the success message after a few seconds
     setTimeout(() => {
         setIsSubmitted(false);
-    }, 4000); // Hide message after 4 seconds
-    // --- End Static Simulation ---
+    }, 4000); 
   };
 
   return (
@@ -96,12 +90,10 @@ function Contact() {
           <button
             type="submit"
             className={styles.submitButton}
-            // No need for disabled state in static version unless you add complex validation
           >
             Send Message
           </button>
 
-          {/* Simplified status message for static demo */}
           {isSubmitted && (
             <p className={`${styles.statusMessage} ${styles.success}`}>
               Thanks for your message! (This is a demo - no email was sent).
@@ -109,10 +101,8 @@ function Contact() {
           )}
         </form>
 
-        {/* Optional: Add other contact methods */}
         <div className={styles.alternativeContact}>
           <p>Or find me on:</p>
-          {/* Replace with your actual links and consider using icons */}
           <a href="mailto:your.email@example.com" className={styles.altLink}>Email</a>
           <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className={styles.altLink}>LinkedIn</a>
           <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className={styles.altLink}>GitHub</a>

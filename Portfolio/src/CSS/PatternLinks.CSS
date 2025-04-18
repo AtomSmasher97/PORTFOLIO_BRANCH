@@ -10,7 +10,7 @@ html {
 }
 
 .gallery {
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1;
 position: relative;
 --s: 220px;
@@ -19,7 +19,7 @@ display: grid;
 grid: auto-flow var(--s) / repeat(2, var(--s));
 gap: var(--g);
 justify-content: center;
-max-width: 500px;         
+max-width: 1000px;         
 margin: 0 auto;
 }
 
@@ -75,3 +75,4 @@ width: 100%; */
 position: relative;
 /* z-index: 2; */
 }
+

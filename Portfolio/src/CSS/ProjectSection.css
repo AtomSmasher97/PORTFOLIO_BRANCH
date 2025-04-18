@@ -56,4 +56,57 @@
     font-size: 0.9rem;
     margin-bottom: 0.25rem;
   }
+  .build-section {
+    background-color: #0f0f0f;
+    padding: 4rem 1rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .build-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #a855f7;
+  }
+  
+  .build-grid {
+    display: grid;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .build-card {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .build-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(168, 85, 247, 0.2);
+  }
+  
+  .build-icon {
+    background-color: #10b981;
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .build-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .build-desc {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
   
