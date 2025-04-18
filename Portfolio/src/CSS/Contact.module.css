@@ -1,34 +1,33 @@
-/* Contact.module.css */
 
 .contactSection {
     padding: 60px 20px;
-    background-color: #f8f9fa; /* Light background for contrast */
+    background-color: #f8f9fa; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Ensure it takes up significant space */
+    min-height: 80vh; 
   }
   
   .container {
     max-width: 600px;
     width: 100%;
     text-align: center;
-    background-color: #ffffff; /* White card background */
+    background-color: #ffffff; 
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   }
   
   .heading {
-    font-size: 2.5rem; /* Responsive font size */
+    font-size: 2.5rem;  
     font-weight: 600;
     margin-bottom: 15px;
-    color: #343a40; /* Dark grey heading */
+    color: #343a40;  
   }
   
   .subheading {
     font-size: 1.1rem;
-    color: #6c757d; /* Medium grey text */
+    color: #6c757d;  
     margin-bottom: 40px;
     line-height: 1.6;
   }
@@ -36,8 +35,8 @@
   .contactForm {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Spacing between form elements */
-    text-align: left; /* Align labels and inputs left */
+    gap: 20px;  
+    text-align: left;  
   }
   
   .formGroup {
@@ -49,14 +48,14 @@
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 0.9rem;
-    color: #495057; /* Slightly darker grey for labels */
+    color: #495057;  
   }
   
   .input,
   .textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #ced4da; /* Subtle border */
+    border: 1px solid #ced4da;  
     border-radius: 4px;
     font-size: 1rem;
     color: #495057;
@@ -66,18 +65,18 @@
   
   .input::placeholder,
   .textarea::placeholder {
-    color: #adb5bd; /* Lighter placeholder text */
+    color: #adb5bd;  
   }
   
   .input:focus,
   .textarea:focus {
     outline: none;
-    border-color: #80bdff; /* Highlight color on focus */
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+    border-color: #80bdff;  
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);  
   }
   
   .textarea {
-    resize: vertical; /* Allow vertical resize, but not horizontal */
+    resize: vertical;  
     min-height: 120px;
   }
   
@@ -86,30 +85,29 @@
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
-    background-color: #007bff; /* Primary blue button */
+    background-color: #007bff;  
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, transform 0.1s ease;
-    align-self: center; /* Center button */
-    margin-top: 10px; /* Space above the button */
+    align-self: center;  
+    margin-top: 10px;  
   }
   
   .submitButton:hover:not(:disabled) {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-1px); /* Slight lift effect */
+    background-color: #0056b3;  
+    transform: translateY(-1px);  
   }
   
   .submitButton:active:not(:disabled) {
-      transform: translateY(0px); /* Click effect */
+      transform: translateY(0px);  
   }
   
   .submitButton:disabled {
-    background-color: #6c757d; /* Grey out when disabled/submitting */
+    background-color: #6c757d;  
     cursor: not-allowed;
   }
   
-  /* Status Messages */
   .statusMessage {
     margin-top: 20px;
     padding: 10px;
@@ -119,22 +117,21 @@
   }
   
   .success {
-    background-color: #d4edda; /* Light green background */
-    color: #155724; /* Dark green text */
+    background-color: #d4edda;  
+    color: #155724;  
     border: 1px solid #c3e6cb;
   }
   
   .error {
-    background-color: #f8d7da; /* Light red background */
-    color: #721c24; /* Dark red text */
+    background-color: #f8d7da;  
+    color: #721c24;  
     border: 1px solid #f5c6cb;
   }
   
-  /* Alternative Contact */
   .alternativeContact {
       margin-top: 40px;
       padding-top: 20px;
-      border-top: 1px solid #e9ecef; /* Subtle separator line */
+      border-top: 1px solid #e9ecef; 
       color: #6c757d;
       font-size: 0.9rem;
   }
@@ -155,7 +152,6 @@
       text-decoration: underline;
   }
   
-  /* --- Responsive Adjustments --- */
   @media (max-width: 768px) {
       .heading {
           font-size: 2rem;

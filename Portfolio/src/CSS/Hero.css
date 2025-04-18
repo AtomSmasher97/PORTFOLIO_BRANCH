@@ -7,10 +7,10 @@
     align-items: center;
     flex-direction: column;
     padding: 100px 0;
-    height: 100vh; /* Make hero section full viewport height */
+    height: 100vh;  
     position: relative;
-    display: flex; /* Enable flexbox for vertical centering */
-    justify-content: center; /* Vertically center content */
+    display: flex;  
+    justify-content: center;  
 }
 
 .hero {
@@ -22,9 +22,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Vertically center content */
+    justify-content: center;  
     width: 100%;
-    height: fit-content; /* Adjust height to content */
+    height: fit-content;  
 }
 
 .hero-content h1 {
