@@ -45,7 +45,7 @@ const AnimatedNavbar = () => {
       <nav className="navbar">
         <Link to="/" className="nav-link"><span>Home</span></Link>
         <Link to="/projects" className="nav-link"><span>About</span></Link>
-        <Link to="/ " className="nav-link"><span>Projects</span></Link>
+        <Link to="/work" className="nav-link"><span>Projects</span></Link>
         <Link to="/contact" className="nav-link"><span>Contact</span></Link>
       </nav>
       <div className="cursor" ref={cursorRef}></div>
