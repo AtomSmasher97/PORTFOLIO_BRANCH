@@ -4,11 +4,11 @@ import resumeImg from "./assets/resume.jpg";
 import projectsImg from "./assets/Projects.jpg";
 import contactMeImg from "./assets/ContactMe.jpg";
 import aboutImg from "./assets/About.jpg";
-import resumeFile from "./assets/VENKATESWAR REDDY KOTHAPALLY.pdf";
+import resumeFile from "./assets/VENKATESWAR REDDY KOTHAPALLY.docx";
 import { Link } from 'react-router-dom';
 
 const linkData = [
-  { id: 'resume', to: resumeFile, download: "VENKATESWAR REDDY KOTHAPALLY.pdf", img: resumeImg, alt: "Download my resume", hoverText: "Download my Resume" },
+  { id: 'resume', to: resumeFile, download: "VENKATESWAR REDDY KOTHAPALLY.docx", img: resumeImg, alt: "Download my resume", hoverText: "Download my Resume" },
   { id: 'projects', to: "/work", img: projectsImg, alt: "See my Projects", hoverText: "See my Projects" },
   { id: 'contact', to: "/contact", img: contactMeImg, alt: "Contact me", hoverText: "Contact Me" },
   { id: 'about', to: "/about", img: aboutImg, alt: "About me", hoverText: "Learn More About Me" },

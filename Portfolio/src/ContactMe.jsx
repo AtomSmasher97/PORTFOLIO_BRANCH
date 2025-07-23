@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './CSS/Contact.module.css';
-import resumeFile from "./assets/VENKATESWAR REDDY KOTHAPALLY.pdf"; 
+import resumeFile from "./assets/VENKATESWAR REDDY KOTHAPALLY.docx"; 
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -43,7 +43,7 @@ function Contact() {
         <div className={styles.overlayContent}>
           <h2>Page Under Construction!</h2>
           <p>I'm working hard to get this page ready. In the meantime,</p>
-          <a href={resumeFile} download="VENKATESWAR REDDY KOTHAPALLY.pdf" className={styles.downloadButton}>
+          <a href={resumeFile} download="VENKATESWAR REDDY KOTHAPALLY.docx" className={styles.downloadButton}>
             Download My Resume
           </a>
         </div>
